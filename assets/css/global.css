@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    overflow: hidden;
+}
+.slide-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slide {
+    display: none;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease-in;
+}
+.slide.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+h1 {
+    font-size: 3rem;
+    color: #4ec9b0;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(78, 201, 176, 0.3);
+}
+h2 {
+    font-size: 2rem;
+    color: #569cd6;
+    margin-bottom: 1.5rem;
+}
+.subtitle {
+    font-size: 1.5rem;
+    color: #ce9178;
+    margin-bottom: 2rem;
+}
+.terminal {
+    background: #0c0c0c;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    min-height: 200px;
+}
+.terminal-header {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.terminal-button.close { background: #ff5f56; }
+.terminal-button.minimize { background: #ffbd2e; }
+.terminal-button.maximize { background: #27c93f; }
+.terminal-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.prompt {
+    color: #4ec9b0;
+}
+.command {
+    color: #dcdcaa;
+}
+.output {
+    color: #d4d4d4;
+    margin-left: 0;
+}
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: #4ec9b0;
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+.content-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #d4d4d4;
+    margin: 1rem 0;
+}
+.highlight {
+    color: #4ec9b0;
+    font-weight: bold;
+}
+.navigation {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #858585;
+}
+.nav-hint {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+.slide-number {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    color: #858585;
+    font-size: 0.9rem;
+}
+.activity-box {
+    background: rgba(78, 201, 176, 0.1);
+    border-left: 4px solid #4ec9b0;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 4px;
+}
+.activity-box h3 {
+    color: #4ec9b0;
+    margin-bottom: 1rem;
+}
+ul {
+    margin-left: 2rem;
+    line-height: 1.8;
+}
+li {
+    margin: 0.5rem 0;
+}
+code {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    color: #ce9178;
+}
+
+/* Split screen layout for specific slides */
+.split-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el espacio en dos columnas iguales */
+    gap: 2rem;
+    align-items: center;
+    height: 70vh; /* Para que ocupe gran parte de la pantalla */
+}
+.split-left {
+    padding-right: 1rem;
+}
+.split-right {
+    padding-left: 1rem;
+}
+/* Asegura que el terminal se adapte al split view */
+.split-container .terminal {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.split-container .terminal-content {
+    flex: 1;
+}
+
+/* Text only layout (no terminal) */
+.text-only-slide {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.inline-code-block {
+    background: rgba(12, 12, 12, 0.6);
+    border-left: 4px solid #4ec9b0;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+.inline-code-block .code-line {
+    margin: 0.5rem 0;
+    font-family: 'Consolas', 'Monaco', monospace;
+}
+.inline-code-block .comment {
+    color: #6a9955;
+}
+.inline-code-block .keyword {
+    color: #569cd6;
+}
+.inline-code-block .string {
+    color: #ce9178;
+}
+.bullet-points {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin: 2rem 0;
+}
+.bullet-points li {
+    margin: 1rem 0;
+    list-style: none;
+    position: relative;
+    padding-left: 2rem;
+}
+.bullet-points li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4ec9b0;
+    font-size: 1.5rem;
+}
