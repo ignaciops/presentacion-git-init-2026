@@ -223,3 +223,103 @@ code {
     color: #4ec9b0;
     font-size: 1.5rem;
 }
+
+/* Barra de progreso */
+.slide-number {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    color: #858585;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress-bar {
+    width: 150px;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #4ec9b0;
+    transition: width 0.3s ease;
+}
+
+/* Animación para timer */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.timer-warning {
+    color: #ff5f56 !important;
+    animation: pulse 1s infinite;
+}
+
+/* Ajustes para resoluciones bajas (proyectores) */
+@media (max-height: 800px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .inline-code-block {
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .bullet-points {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 1rem 0;
+    }
+
+    .activity-box {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Para pantallas muy pequeñas (768p) */
+@media (max-height: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .content-text {
+        font-size: 1rem;
+    }
+
+    .inline-code-block .code-line {
+        margin: 0.3rem 0;
+    }
+}

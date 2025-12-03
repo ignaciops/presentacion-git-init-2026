@@ -23,7 +23,7 @@
                     <div class="output" id="output1" style="display: none;">Inicializado repositorio Git vacío en /home/techubino/mi-proyecto-2026/.git/</div>
                 </div>
             </div>
-            <p class="content-text">Ignacio Perez Smith | Software Development Engineer in Test | DgoTecHub </p>
+            <p class="content-text"><span class="highlight">Ignacio Perez Smith</span> | <strong>Software Development Engineer in Test</strong> | <span class="highlight">DgoTecHub</span></p>
         </div>
 
         <!-- Slide 2: The Problem -->
@@ -44,8 +44,10 @@
                     <div><span class="prompt">techubino@dgotechub:~$</span> <span class="command" id="cmd2"></span><span class="cursor"></span></div>
                     <div class="output" id="output2" style="display: none;">
                         En la rama master<br>
-                        No hay commits todavía<br><br> no hay nada para confirmar<br><br>
-                        <span style="color: #ff5f56;">⚠ Pero... ¿por qué no empezamos?</span>
+                        No hay commits todavía<br><br>
+                        no hay nada para confirmar (cree/copie archivos y use "git add" para rastrear)<br><br>
+                        <span style="color: #ff5f56;">⚠️ El miedo nos paraliza...</span><br>
+                        <span style="color: #6a9955;"># ¿Te suena familiar?</span>
                     </div>
                 </div>
             </div>
@@ -77,11 +79,63 @@
                 No necesitas el stack perfecto, ni el plan completo.<br>
                 Solo necesitas una carpeta vacía y la intención.
             </p>
+            <div class="inline-code-block" style="background: rgba(78, 201, 176, 0.08); border-color: #4ec9b0; margin-top: 2rem;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span style="font-size: 2rem;">💡</span>
+                    <div>
+                        <div class="code-line" style="color: #858585; font-style: italic;">
+                            <strong style="color: #4ec9b0;">Mi git init 2026:</strong>
+                        </div>
+                        <div class="code-line" style="margin-top: 0.5rem;">
+                            <span class="keyword">mkdir</span> <span class="string">test-architect-roadmap-2026</span>
+                        </div>
+                        <div class="code-line" style="color: #6a9955; font-size: 1rem; margin-top: 0.3rem;">
+                            # Meta: Estudiar y aplicar roadmap de Test Architect todo el año
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Slide 4: Activity -->
-        <div class="slide" data-slide="4">
+        <!-- Slide 4: Roadmap -->
+        <div class="slide text-only-slide" data-slide="4">
+            <h2>🗺️ Tu Roadmap de Crecimiento</h2>
+
+            <div style="display: flex; justify-content: center; align-items: center; height: 60vh;">
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; line-height: 3; font-weight: bold;">
+                        <span style="color: #4ec9b0;">init</span>
+                        <span style="color: #858585;">→</span>
+                        <span style="color: #569cd6;">commit</span>
+                        <span style="color: #858585;">→</span>
+                        <span style="color: #dcdcaa;">branch</span>
+                        <span style="color: #858585;">→</span>
+                        <span style="color: #ce9178;">merge</span>
+                        <span style="color: #858585;">→</span>
+                        <span style="color: #ff5f56;">revert</span>
+                        <span style="color: #858585;">→</span>
+                        <span style="color: #4ec9b0;">push</span>
+                    </div>
+                    <p class="content-text" style="margin-top: 2rem; font-size: 1.6rem;">
+                        <span class="highlight">6 comandos</span> para gestionar tu año
+                    </p>
+                    <p class="content-text" style="margin-top: 1rem; font-size: 1.2rem; color: #858585;">
+                        Veamos cada uno en detalle →
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Actividad -->
+        <div class="slide" data-slide="5">
             <h2>✨ ACTIVIDAD: Crea Tu README.md y .gitignore</h2>
+            <!-- Timer -->
+             <div style="text-align: center; margin: 1rem 0;">
+                <div style="display: inline-block; background: rgba(78, 201, 176, 0.2); padding: 1rem 2rem; border-radius: 8px; border: 2px solid #4ec9b0;">
+                    <span style="font-size: 3rem; color: #4ec9b0; font-weight: bold;" id="timer">90</span>
+                    <span style="font-size: 1.2rem; color: #858585;"> segundos</span>
+                </div>
+            </div>
 
             <div class="split-container">
 
@@ -126,7 +180,8 @@
             </div>
         </div>
 
-        <div class="slide text-only-slide" data-slide="5">
+        <!-- Slide 6: Commit -->
+        <div class="slide text-only-slide" data-slide="6">
             <h2>1. git commit -m "Small wins"</h2>
             <p class="subtitle">Progreso Atómico</p>
 
@@ -136,28 +191,45 @@
                 <div class="code-line"><span class="prompt">techubino@dgotechub:~$</span> <span class="command">git commit -m "Leí 2 capítulos de ese libro de testing"</span></div>
             </div>
 
+            <div class="inline-code-block" style="background: rgba(78, 201, 176, 0.08); border-color: #4ec9b0; margin-top: 2rem;">
+                <div class="code-line" style="color: #858585; font-style: italic; margin-bottom: 0.5rem;">
+            💡      <strong style="color: #4ec9b0;">Mis commits reales de enero 2026:</strong>
+                </div>
+                <div class="code-line"><span class="prompt">techubino@dgotechub:~$</span> <span class="command">git commit -m "Definí roadmap completo de Test Architect"</span></div>
+                <div class="code-line"><span class="prompt">techubino@dgotechub:~$</span> <span class="command">git commit -m "Estudié Test Strategy Patterns - semana 1"</span></div>
+                <div class="code-line"><span class="prompt">techubino@dgotechub:~$</span> <span class="command">git commit -m "Practiqué diseño de framework de testing"</span></div>
+            </div>
+
             <p class="content-text">
                 No dirás 'no hice nada' en febrero. Tendrás <span class="highlight">5, 10 o 20 commits</span> que demuestran tu movimiento.
                 Celebra cada commit pequeño; son tu prueba de avance.
             </p>
         </div>
 
-        <div class="slide text-only-slide" data-slide="6">
-            <h2>2. git branch experiment</h2>
+        <!-- Slide 7: Branch -->
+        <div class="slide text-only-slide" data-slide="7">
+            <h2>2. git switch -c experiment</h2>
             <p class="subtitle">Juega Sin Miedo</p>
 
             <div class="inline-code-block">
-                <div class="code-line"><span class="prompt">techubino@dgotechub:~$</span> <span class="command">git checkout -b prueba-pytest-bdd</span></div>
-                <div class="code-line"><span class="comment">// ¿Quieres probar TDD o una librería nueva? Haz un branch.</span></div>
+                <div class="code-line"><span class="prompt">techubino@dgotechub:~$</span> <span class="command">git switch -c prueba-pytest-bdd</span></div>
+                <div class="code-line"><span class="comment">// ¿Quieres probar TDD o una librería nueva? Crea una rama.</span></div>
             </div>
 
             <p class="content-text">
-                Los <span class="highlight">branches son tu permiso para experimentar sin culpa</span>.
-                Tu proyecto principal sigue intacto. Si no funciona, simplemente borra el branch (`git branch -D`) y listo.
+                Las <span class="highlight">ramas son tu permiso para experimentar sin culpa</span>.
+                Tu proyecto principal sigue intacto. Si no funciona, simplemente borra la rama y listo.
             </p>
+
+            <div class="inline-code-block" style="margin-top: 1.5rem;">
+                <div class="code-line"><span class="prompt">techubino@dgotechub:~$</span> <span class="command">git switch main</span></div>
+                <div class="code-line"><span class="prompt">techubino@dgotechub:~$</span> <span class="command">git branch -D prueba-pytest-bdd</span></div>
+                <div class="code-line"><span class="comment">// Si no funcionó, simplemente elimínala</span></div>
+            </div>
         </div>
 
-        <div class="slide text-only-slide" data-slide="7">
+        <!-- Slide 8: Merge -->
+        <div class="slide text-only-slide" data-slide="8">
             <h2>3. git merge</h2>
             <p class="subtitle">Integra Lo Que Sirve</p>
 
@@ -172,7 +244,8 @@
             </p>
         </div>
 
-        <div class="slide text-only-slide" data-slide="8">
+        <!-- Slide 9: Revert -->
+        <div class="slide text-only-slide" data-slide="9">
             <h2>4. git revert</h2>
             <p class="subtitle">Pivotea Sin Vergüenza</p>
 
@@ -187,7 +260,8 @@
             </p>
         </div>
 
-        <div class="slide text-only-slide" data-slide="9">
+        <!-- Slide 10: Push -->
+        <div class="slide text-only-slide" data-slide="10">
             <h2>5. git push origin main</h2>
             <p class="subtitle">Comparte Tu Proceso (Accountability)</p>
 
@@ -202,35 +276,63 @@
             </p>
         </div>
 
-        <div class="slide text-only-slide" data-slide="10">
-    <h1>CIERRE: Tu Primer Commit Empieza Hoy</h1>
-    <p class="subtitle">Su tarea esta semana es configurar su Repo:</p>
+        <!-- Slide 11: Conclusion and Activity -->
+        <div class="slide text-only-slide" data-slide="11">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">¿Qué Te Detiene?</h1>
+            <p class="subtitle" style="font-size: 1.4rem; margin-bottom: 1.5rem;">
+                No es conocimiento. No es tiempo.<br>
+                Es la creencia de que necesitas todo listo.
+            </p>
 
-    <ul class="bullet-points">
-        <li><strong>1. Crea el repo</strong> (literalmente, en GitHub/GitLab).</li>
-        <li><strong>2. Sube tu README y .gitignore</strong> - tu primer push del año.</li>
-        <li><strong>3. Comparte tu inicio:</strong>
-            <ul>
-                <li>En Discord: Usa el canal <span class="highlight">#proyectos-2026</span> (o el que definan).</li>
-                <li>En Redes (si aplica): Usa <span class="highlight">#GitInit2026</span> y etiqueta a @DgoTecHub (ejemplo).</li>
+            <div class="inline-code-block" style="background: rgba(78, 201, 176, 0.15); border-color: #4ec9b0; margin: 1.5rem 0; padding: 1rem;">
+                <div class="code-line" style="font-size: 1.2rem;">
+                    <span style="color: #4ec9b0;">Hoy, en lugar de "voy a aprender X", di:</span>
+                </div>
+                <div class="code-line" style="font-size: 1.4rem; margin-top: 0.5rem;">
+                    <span class="string">"Hoy hice git init. Escribí mi README. Me comprometí."</span>
+                </div>
+            </div>
+
+            <h3 style="color: #569cd6; margin-top: 1.5rem; font-size: 1.5rem;">📋 Tu Tarea Esta Semana:</h3>
+            <ul class="bullet-points" style="font-size: 1.2rem; line-height: 1.6; margin: 1rem 0;">
+                <li><strong>Crea el repo</strong> en GitHub/GitLab</li>
+                <li><strong>Sube tu README.md y .gitignore</strong></li>
+                <li><strong>Compártelo:</strong> <span class="highlight">#GitInit2026</span> (<code>#proyectos-2026</code>)</li>
             </ul>
-        </li>
-    </ul>
 
-    <!-- <div class="activity-box" style="margin-top: 1.5rem;">
-        <h3 style="font-size: 1.5rem;">🫂 ¡Busca tu "Accountability Buddy"!</h3>
-        <p class="content-text" style="font-size: 1.2rem;">
-            Tu compañero es tu <strong>Revisor de Código</strong> personal. Intercambien Pull Requests de progreso.
-        </p>
-    </div> -->
+            <!-- Compromiso personal más compacto -->
+            <div style="text-align: center; margin: 1rem 0; padding: 1rem; background: rgba(78, 201, 176, 0.08); border-radius: 6px; border: 1px solid #4ec9b0;">
+                <p style="font-size: 1.1rem; color: #d4d4d4; line-height: 1.5;">
+                    En febrero, yo también compartiré mi progreso del roadmap de Test Architect.<br>
+                </p>
+            </div>
 
-    <div class="activity-box" style="margin-top: 1.5rem; border-left: 4px solid #569cd6;">
-        <h3 style="font-size: 1.5rem;">¡Nos vemos en febrero en el Shark Tank! 🦈</h3>
+            <!-- Shark Tank más prominente -->
+            <div class="activity-box" style="margin-top: 1rem; border-left: 4px solid #4ec9b0; background: rgba(78, 201, 176, 0.15); padding: 1rem;">
+                <h3 style="font-size: 1.8rem; text-align: center; margin: 0;">
+                    🦈 Nos vemos en febrero en el Shark Tank
+                </h3>
+                <p style="text-align: center; font-size: 1.1rem; margin-top: 0.5rem; color: #d4d4d4;">
+                    Tu README será tu pitch. Tu historial de commits, tu credencial.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem;">
+                <p style="color: #4ec9b0;"><strong>¿Quién va a hacer su primer commit HOY? 🙋</strong></p>
+            </div>
+        </div>
+
     </div>
-</div>
 
     <div class="slide-number">
-        <span id="current-slide">1</span> / <span id="total-slides">10</span>
+        <span id="current-slide">1</span> / <span id="total-slides">11</span>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
     </div>
 
     <div class="navigation">
