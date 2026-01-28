@@ -1,5 +1,5 @@
 let currentSlide = 1;
-const totalSlides = 11; // ACTUALIZADO de 10 a 11
+const totalSlides = 12; // ACTUALIZADO de 10 a 11
 document.getElementById('total-slides').textContent = totalSlides;
 
 // Variable global para controlar el timer
@@ -161,6 +161,10 @@ document.addEventListener('click', (e) => {
 // Inicializar presentación
 window.addEventListener('load', () => {
     showSlide(1);
+    // Ejecutar animación del slide inicial
+    if (slideAnimations[1]) {
+        setTimeout(() => slideAnimations[1](), 100);
+    }
 });
 
 // Limpiar timer al cerrar/recargar página
